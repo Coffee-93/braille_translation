@@ -1,5 +1,5 @@
 # Automatic Braille Translation 
 
-## CSCE 5222 - Feature Engineering
+* CSCE 5222 - Feature Engineering
 
-## Team Members: Wesley DeLoach, Bobby Meyer, Richard Tran
+* Team Members: Wesley DeLoach, Bobby Meyer, Richard Tran

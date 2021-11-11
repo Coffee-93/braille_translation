@@ -1,0 +1,28 @@
+'''easybpy version of braille_abc'''
+
+import bpy
+from easybpy import *
+
+# create cube
+cube1 = create_cube()
+# resize cube into flat surface 
+scale(cube1, [10.0,5.0,1.0])
+
+# add braille dots, first row
+sph1 = create_uv_sphere()
+location(sph1,[-8,3,1])
+sph2 = create_uv_sphere()
+location(sph2,[-1.5,3,1])
+sph3 = create_uv_sphere()
+location(sph3,[5,3,1])
+sph4 = create_uv_sphere()
+location(sph4,[7.5,3,1])
+
+# 2nd row dots
+sph5 = create_uv_sphere()
+location(sph5,[-1.5,0,1])
+
+# 3rd row dots
+# empty
+
+# 'Alt + P' to render

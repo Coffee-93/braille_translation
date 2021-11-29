@@ -3,6 +3,7 @@ from PyQt5 import QtGui
 from PyQt5 import QtCore
 import pyqtgraph as pg
 
+from Tesserect_Text_Extraction import get_text
 import sys
 
 class test_extractor(QWidget):
@@ -66,6 +67,12 @@ class test_extractor(QWidget):
         pixmap = QtGui.QPixmap(fname[0])
         self.image.resize(400, 400)
         self.image.setPixmap(pixmap.scaled(self.image.size(), QtCore.Qt.IgnoreAspectRatio))
+        
+        text1, text2, text3, text4 = get_text(fname[0])
+        self.tesserect_text.setText(text1)
+        self.spellcheck_text.setText(text2)
+        self.cv_text.setText(text3)
+        self.cv_spell_text.setText(text4)
     
     
 
